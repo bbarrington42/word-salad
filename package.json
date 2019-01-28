@@ -1,0 +1,22 @@
+{
+  "name": "word-salad",
+  "version": "1.0.0",
+  "description": "Generate a word salad of which President Trump would be proud.\"",
+  "main": "handler.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Bill Barrington",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "ask-sdk": "^2.3.0",
+    "assert": "^1.4.1",
+    "dotenv": "^6.2.0"
+  }
+}
