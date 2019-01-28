@@ -3,12 +3,11 @@
 const assert = require('assert');
 const util = require('./lib/util');
 
-const template1 = ['this', 'is', 'a', util.grammar.adjective, 'mistake'];
+const template1 = 'This is a ${adjective} mistake';
+const expected = 'This is a huge mistake';
 
 it('correctly substitutes into word-salad template', () => {
-    const sub = {text: 'huge', type: util.grammar.adjective};
-    const t = Array.from(template1);
-    t[3] = sub.text;
-    const expected = t.join(' ');
+    const sub = new util.Substitution('huge', util.grammar.adjective);
+
     assert(util.findAndReplace(template1, sub), expected)
 });
