@@ -97,7 +97,7 @@ const ErrorHandler = {
 
 let skill;
 
-exports.tweetSearch = async function (event, context) {
+exports.wordSalad = async function (event, context) {
     console.log(`REQUEST++++${JSON.stringify(event)}`);
     if (!skill) {
         skill = Alexa.SkillBuilders.custom()
