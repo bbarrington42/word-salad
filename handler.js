@@ -1,6 +1,7 @@
 'use strict';
 
 const Alexa = require('ask-sdk');
+const util = require('util');
 
 
 // -----------------------------------------------------
@@ -29,7 +30,7 @@ const GenerateWordSaladIntentHandler = {
     },
     handle(handlerInput) {
 
-        const speechText = generateWordSalad();
+        const speechText = util.generateWordSalad();
 
         return handlerInput.responseBuilder
             .speak(speechText)
