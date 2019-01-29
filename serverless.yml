@@ -20,8 +20,8 @@ service: word-salad # NOTE: update this with your service name
 provider:
   name: aws
   runtime: nodejs8.10
-    stage: dev
-    profile: default
+  stage: dev
+  profile: default
 
 # you can overwrite defaults here
 #  stage: dev
@@ -61,7 +61,7 @@ functions:
     handler: handler.wordSalad
     events:
       - alexaSkill:
-          appId: xxxxx
+          appId: amzn1.ask.skill.252f780b-41db-4b80-b3f8-75ec70e734fa
 
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events

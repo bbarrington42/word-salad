@@ -1,7 +1,7 @@
 'use strict';
 
 const Alexa = require('ask-sdk');
-const util = require('util');
+const util = require('./lib/util');
 
 
 // -----------------------------------------------------
